@@ -3,8 +3,11 @@ import Link from 'next/link'
 
 export default function Header () {
   return (
-    <header className='flex justify-between items-center p-3 sticky top-0 bg-white z-20 shadow-sm'>
-      <div className='flex space-x-2 items-center'>
+    <header
+      className='flex justify-between items-center p-3 sticky 
+    top-0 bg-white z-20 shadow-sm text-gray-700'
+    >
+      <div className='flex space-x-2 items-center text-xl '>
         <Image
           src='/images/openai.png'
           width={30}
@@ -13,7 +16,10 @@ export default function Header () {
         />
         <div>
           <h1 className='font-bold'>
-            The Image <span className='text-blue-500'>Generator</span>
+            The Image{' '}
+            <span className='bg-clip-text text-fill-transparent bg-gradient-to-r from-blue-500 to-cyan-500  '>
+              Generator
+            </span>
           </h1>
           <h2 className='text-sm '>
             Power by{' '}
